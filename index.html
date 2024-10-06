@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card Creation</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<h1 id = "title">Build Your Profile Card</h1>
+
+<div class="container">
+    <form id="profileForm" action="#">
+        <div class = Favorite_Color>
+            <label for="favorite_color">Favorite Color: </label>
+            <input type="color"
+                   id="favorite_color"
+                   name="color">
+        </div><br>
+
+        <div class = name>
+            <label for="firstName">First Name: </label>
+            <input type="text"
+                   id="firstName"
+                   name="firstName"
+                   placeholder="First Name"
+                   required><br><br>
+
+            <label for="lastName">Last Name: </label>
+            <input type="text"
+                   id="lastName"
+                   name="lastName"
+                   placeholder="Last Name"
+                   required>
+        </div><br>
+
+        <div class = hobbies>
+            <label for="favHobby">Favorite Hobby: </label>
+            <select id="favHobby" name="hobby">
+                <option value="" disabled selected>Select your hobby</option>
+                <option value="Powerlifting">Powerlifting</option>
+                <option value="Coding">Coding</option>
+                <option value="Looking at expensive houses in my neighborhood">Looking at expensive houses in my neighborhood</option>
+                <option value="Snowboarding">Snowboarding</option>
+                <option value="Swimming">Swimming</option>
+            </select>
+        </div><br>
+
+        <div class="profilePicUrl">
+            <label for="profilePicUrl">Enter Profile Picture Path: </label>
+            <input type="file" id="profilePicUrl" name="profilePicUrl" placeholder="Enter path URL" required>
+        </div><br>
+
+        <div id="submitButton">
+            <button type="submit">Submit Form</button>
+        </div><br><br>
+    </form>
+</div>
+
+<!--Display the demo profile card-->
+
+<div class="profile_card">
+    <img id="profilePic" src="" alt="Profile Picture">
+    <h3 id="fullName">Full Name</h3>
+    <p id="hobby">Your Hobby</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

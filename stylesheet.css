@@ -1,0 +1,22 @@
+.container{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.profile_card {
+    margin-left: 580px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    /*display: flex;*/
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#profilePic{
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+}
